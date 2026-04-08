@@ -47,6 +47,9 @@ wazuh_command.remote_commands=1
 
 This allows the manager to send commands to the agent.
 
+> ⚠️ Warning:
+> Enabling this option allows the Wazuh manager to execute commands on the endpoints. This can introduce security risks if not properly controlled. Ensure that only trusted users have access to the manager, and restrict permissions appropriately to prevent unauthorized command execution on endpoints.
+
 ## Step 2: Create an agent group on the manager
 1. Open the Wazuh dashboard.
 2. Create a Linux or Windows agent group.
